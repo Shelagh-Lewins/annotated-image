@@ -16,9 +16,9 @@ The Annotated Image code includes the following:
 ## Usage
 The downloaded code will work as is, and can be used as an example. However you will want to customise it for your own use. To do this, change the following:
 
-- page details and hotspot data in /scripts/data.js
-- /main_image.jpg
-- detail images in /images
+- page details and hotspot data in ```/scripts/data.js```
+- ```/main_image.jpg```
+- detail images in ```/images```
 
 ### Page details
 In the file /scripts/data.js, modify the following:
@@ -34,7 +34,7 @@ Copy your main image into the project root, and name it ```main_image.jpg```. Yo
 ### Hotspot data
 You will need to enter co-ordinates for each hotspot into ```/scripts/data.js```. I suggest that you use an online utility to generate the co-ordinates.
 
-The instructions below are based on (http://www.image-map.net/) but should be easily adapted for other online generators.
+The instructions below are based on http://www.image-map.net/ but should be easily adapted for other online generators.
 
 Go to a site with an imagemap creation utility, such as http://www.image-map.net/
 
@@ -64,7 +64,7 @@ Although the code in the popup is in a disabled text area, you can still highlig
 </map>
 ```
 
-Each hotspot is defined in /scripts/data.js by a JavaScript object in the array areaData. This object has the following properties:
+Each hotspot is defined in ```/scripts/data.js``` by a JavaScript object in the array ```areaData```. This object has the following properties:
 
 - **data-item**: a unique string without spaces that will be used as a data key and as the detail image filename, e.g. "seal".
 - **data-full**: the name and tooltip that will be shown for the item, e.g. "Grey seal".
@@ -93,21 +93,21 @@ const areaData = [
 ];
 ```
 
-**Tip**: I find it easiest to enter one hotspot at a time into /scripts/data.js, save the file and check that the page works as expected. That way, if there is a problem, you know which hotspot is the issue.
+**Tip**: I find it easiest to enter one hotspot at a time into ``/scripts/data.js```, save the file and check that the page works as expected. That way, if there is a problem, you know which hotspot is the issue.
 
 ### Create the detail imges
-For each hotspot, add a detail image in the '/images' folder. This could be copied from your main image, or a completely different image. The size is not critically important but it won't be displayed larger than 768px wide.
+For each hotspot, add a detail image in the ```/images``` folder. This could be copied from your main image, or a completely different image. The size is not critically important but it won't be displayed larger than 768px wide.
 
-The image should have the same name as the hotspot identifier data-item, so for example 'seal.jpg'.
+The image should have the same name as the hotspot identifier ```data-item```, so for example 'seal.jpg'.
 
-By default the file extension should be '.jpg' but you can specify a different file extension for that hotspot with the property 'file-extension'.
+By default the file extension should be '.jpg' but you can specify a different file extension for that hotspot with the property ```file-extension```.
 
 ## Debugging
 If the hotspots aren't working, check that all your hotspot coords are top left, bottom right. If any is in the wrong order, the hotspots and radio buttons will not work.
 
-Make sure you use the property 'data-item' as the name of the detail image file in /images.
+Make sure you use the property 'data-item' as the name of the detail image file in ```/images```.
 
-Make sure your detail images have the right file extension: .jpg by default, or the value you specified with 'file-extension'.
+Make sure your detail images have the right file extension: .jpg by default, or the value you specified with ```file-extension```.
 
 ## Code use licence
 The images in the repository are copyright Shelagh Lewins and Alister Perrott 2020. Please do not republish these images without permission or credit.
