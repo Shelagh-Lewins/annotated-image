@@ -63,7 +63,7 @@ body {
 
 .items-footer {
 	flex: 0 1 auto;
-	padding: 0 16px;
+	padding: 0 16px 8px 16px;
 }
 
 .items-footer address {
