@@ -69,7 +69,7 @@ Each hotspot is defined in ```/scripts/data.js``` by a JavaScript object in the 
 - **data-item**: a unique string without spaces that will be used as a data key and as the detail image filename, e.g. "seal".
 - **data-full**: the name and tooltip that will be shown for the item, e.g. "Grey seal".
 - **coords**: copy "coords" from your image map data.
-- **description**: text to describe the item. Escape special characters and use \n to enter a line break, e.g. "This is a grey seal\nIt\'s easy to mistake it for a rock."
+- **description**: text to describe the item. Escape special characters and use ```\n``` to enter a line break, e.g. ```"This is a grey seal\nIt\'s easy to mistake it for a rock."```
 - **file-extension**: optional. Specify a different filetype for the detail image (default .jpg).
 
 For each hotspot you want to create, create an object in the areaData array, copy the image map coords into the object and fill in the additional properties - see the example below.
