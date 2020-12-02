@@ -72,7 +72,7 @@ Each hotspot is defined in ```/scripts/data.js``` by a JavaScript object in the 
 - **description**: text to describe the item. Escape special characters and use ```\n``` to enter a line break, e.g. ```"This is a grey seal\nIt\'s easy to mistake it for a rock."```
 - **file-extension**: optional. Specify a different filetype for the detail image (default .jpg).
 
-For each hotspot you want to create, create an object in the areaData array, copy the image map coords into the object and fill in the additional properties - see the example below.
+For each hotspot you want to create, create an object in the ```areaData``` array, copy the image map coords into the object and fill in the additional properties - see the example below.
 
 #### Example hotspot data
 ```
@@ -93,7 +93,7 @@ const areaData = [
 ];
 ```
 
-**Tip**: I find it easiest to enter one hotspot at a time into ``/scripts/data.js```, save the file and check that the page works as expected. That way, if there is a problem, you know which hotspot is the issue.
+**Tip**: I find it easiest to enter one hotspot at a time into ```/scripts/data.js```, save the file and check that the page works as expected. That way, if there is a problem, you know which hotspot is the issue.
 
 ### Create the detail imges
 For each hotspot, add a detail image in the ```/images``` folder. This could be copied from your main image, or a completely different image. The size is not critically important but it won't be displayed larger than 768px wide.
@@ -105,7 +105,7 @@ By default the file extension should be '.jpg' but you can specify a different f
 ## Debugging
 If the hotspots aren't working, check that all your hotspot coords are top left, bottom right. If any is in the wrong order, the hotspots and radio buttons will not work.
 
-Make sure you use the property 'data-item' as the name of the detail image file in ```/images```.
+Make sure you use the property```data-item``` as the name of the detail image file in ```/images```.
 
 Make sure your detail images have the right file extension: .jpg by default, or the value you specified with ```file-extension```.
 
