@@ -1,0 +1,168 @@
+
+/* *** Annotated image *** */
+body {
+	background-color: #eee;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+/* default - small devices */
+.outer {
+	display: flex;
+  flex-direction: column-reverse;
+}
+
+.items {
+	background: #eee;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: 100%;
+	z-index: 10;
+}
+
+.items-header {
+	display: none;
+	flex: 0 1 auto;
+}
+
+.items-header.mobile-only {
+	display: block;
+}
+
+.main-image-holder {
+	background-color: #666;
+	position: relative;
+	width: 100%;
+}
+
+.item-detail {
+	margin-top: 8px;
+}
+
+.hide-while-loading {
+	background: #666;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+.hide-while-loading .text {
+	color: #fff;
+	display: block;
+	margin-top: 32px;
+	text-align: center;
+}
+
+.items-body {
+	flex: 1 1 auto;
+	min-height: 0; /* flex items have an implied min-height: auto meaning they cannot be shorter than the height of the content, so can grow but not shrink */
+	padding: 8px;
+}
+
+.items-footer {
+	flex: 0 1 auto;
+	padding: 0 16px;
+}
+
+.items-footer address {
+	display: inline;
+}
+
+.items-footer div {
+	text-align: center;
+}
+
+.item-list {
+	height: 100%;
+	float: left;
+	margin-right: 8px;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.item-detail {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+
+.item-detail-image {
+	flex: 0 1 auto;
+	max-height: 50%;
+	text-align: center;
+}
+
+.item-detail-image img {
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	display: none;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.item-detail-text {
+	background: #fff;
+	border: 1px solid #aaa;
+	border-radius: 8px;
+	display: flex;
+	flex: 1 1 auto;
+	margin-top: 8px;
+	min-height: 0;
+	padding: 8px;
+	white-space: pre-line;
+}
+
+.item-detail-text .inner {
+	overflow-y: auto;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	body {
+		background-color: #666;
+	}
+
+	.items-header {
+		display: block;
+		flex: 0 1 auto;
+	}
+
+	.items-header.mobile-only {
+		display: none;
+	}
+
+	.outer {
+		display: block;
+	}
+
+	.items {
+		display: flex;
+		flex-direction: column;
+		float: right;
+		height: 100vh;
+		width: 580px;
+	}
+
+	.item-list {
+		width: 218px;
+	}
+
+	.main-image-holder {
+		height: 100vh;
+		margin-right: 580px;
+		width: auto;
+	}
+
+	.item-detail {
+		margin-top: 0;
+		width: 336px;
+	}
+
+	.item-detail-image img {
+		max-width: 314px;
+	}
+}

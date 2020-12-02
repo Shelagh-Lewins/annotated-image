@@ -1,0 +1,62 @@
+env:
+  browser: true
+  es6: true
+  node: true
+  meteor: true
+plugins:
+  - meteor
+extends:
+  - 'eslint:recommended'
+  - 'airbnb'
+  - 'plugin:meteor/recommended'
+globals:
+  BlazeLayout: readonly
+  EZModal: readonly
+  Flash: readonly
+  FlowRouter: readonly
+  jQuery: readonly
+  moment: readonly
+  _s: readonly
+  mockData: writable
+  ReactiveArray: readonly
+parserOptions:
+  ecmaVersion: 9
+  sourceType: module
+rules:
+  consistent-return:
+    - warn
+  import/no-unresolved:
+    - error
+    - ignore:
+      - "^meteor/"
+      - "^/"
+  indent:
+    - error
+    - tab
+  no-tabs:
+    - 0
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
+  no-console:
+    - 0
+  meteor/no-session:
+    - 0
+  max-len:
+    - 0
+  quote-props:
+    - error
+    - always
+  no-underscore-dangle:
+    - 0
+  array-callback-return:
+    - 0
+  radix:
+    - 0
+      
