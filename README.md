@@ -21,10 +21,10 @@ The downloaded code will work as is, and can be used as an example. However you 
 - detail images in ```/images```
 
 ### Page details
-In the file /scripts/data.js, modify the following:
+In the file ```/scripts/data.js```, modify the following:
 
-- titleText: string which is used as page header and page title
-- footer: html which is used as a footer
+- ```titleText```: string which is used as page header and page title
+- ```footer```: html which is used as a footer
 
 ### Main image
 In the project root, delete the default image ```main_image.jpg```.
