@@ -3,7 +3,7 @@
 const titleText = 'How to tell a seal from a rock';
 
 // footer html
-const footer = '<div>All images &copy; Alister Perrott or Shelagh Lewins 2020</div><div>Example contact details: <address><a href="mailto:creator@example.com">Example email address</a></address></div><div><a href="https://github.com/Shelagh-Lewins/annotated-image">Back to the Annotated Image GitHub repository</a></div>';
+const footer = '<div>All images &copy; Alister Perrott or Shelagh Lewins 2020</div><div>Example contact details: <address><a href="mailto:creator@example.com">Example email address</a></address></div><div><a href="https://github.com/Shelagh-Lewins/annotated-image">Annotated Image source code in GitHub</a></div>';
 
 // *** HOTSPOT AND IMAGE DETAIL DATA *** //
 // data-item must be a unique string without spaces, and a valid file name.
